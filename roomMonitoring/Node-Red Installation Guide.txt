@@ -1,0 +1,37 @@
+
+!!WINDOWS VERSION!!
+!!WINDOWS VERSION!!
+!!WINDOWS VERSION!!
+
+
+1. Go to https://nodejs.org/en
+
+2. click > Download Node.js(LTS)
+
+3. Run Windows PowerShell as Administrator
+
+4. Type this command to change directory to the location where you download the installer, for e.g. > cd C:\Users\<YourUsername>\Downloads
+
+5. Copy the name of the installer that you download and paste then enter, for e.g. > .\node-v22.11.0-x64.msi
+
+6. You will see Node.js Setup, just click next and check the box to accept terms, then click next again then you will see "Automatically install the necessary tool. etc.." check that and click next again and click install then wait to finish installing.
+
+7. Another window will pop out just press any key to continue, then another Windows PowerShell will open automatically to install Chocolatey package, after installing, it will automatically exit (if not just manually exit).
+
+8. Next is to install node-red, restart the Windows PowerShell and make sure to run as Administrator. Copy and paste this command > npm install -g --unsafe-perm node-red
+
+9. After you install node-red, copy and paste this command to start Node-Red > node-red
+
+10. You will see a line that says "Server now running at https://127.0.0.1:1880/" you need to hold ctrl key and click the https://127.0.0.1:1880/ (or just copy and paste it on your browser).
+
+11. You need to install the dashboard for ui, to install it go to the Windows PowerShell again
+	1. Open Windows PowerShell as an administrator.
+	2. Navigate to the Node-RED user directory. By default, this is usually:
+		- cd C:\Users\<YourUsername>\.node-red
+		(Replace <YourUsername> with your actual Windows username.)
+
+	3. Run the following command to install the Node-RED dashboard:
+		- npm install node-red-dashboard
+
+	4. Once the installation is complete, restart Node-RED with:
+		- node-red
